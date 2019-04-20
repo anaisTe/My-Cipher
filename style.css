@@ -1,0 +1,23 @@
+body{
+    background-color: #e2d1c3;
+}
+.init{
+    margin-top: 200px;
+}
+.show{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+a{
+    color: gray;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+.input-des{
+    margin: 10px;
+}
