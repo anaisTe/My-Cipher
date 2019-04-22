@@ -8,6 +8,8 @@ const container_code = document.getElementById('container_code');
 const go_decode = document.getElementById('go_decode');
 const container_decode = document.getElementById('container_decode');
 
+const btn_cifrar = document.getElementById('btn_cifrar');
+
 btn_start.addEventListener('click', ()=> {
     welcome_Container.classList.remove('show');
     welcome_Container.classList.add('hidden');
@@ -43,3 +45,6 @@ go_decode.addEventListener('click', ()=> {
     container_instructions.classList.add('hidden');
 });
 
+btn_cifrar.addEventListener('click', ()=> {
+    alert('hola_2');
+});
