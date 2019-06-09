@@ -17,11 +17,15 @@ const decode = `
 <div id="container_code" class="center">
     <p>Cifra una palabra y ten una contraseña segura</p>
     Desplazamiento: 
-    <input id="jump" type="number" min="1" max="33" class="input-des"/>
+    <input id="jump_decode" type="number" min="1" max="33" class="input-des"/>
     </br>
     <textarea id="area_decode" class="text-area" rows="4" cols="50" placeholder="Escribe aquí"></textarea>
     </br>
     <button type="button" class="btn btn-outline-secondary" id="btn_decode">Descifrar</button>
+    <br/>
+    <br/>
+    <p id="area2_decode"></p>
+    <br/>
 </div>`
 
 decode_div.innerHTML = decode;
@@ -31,8 +35,23 @@ decode_div.querySelector("#go_code").addEventListener("click", ()=>{
 })
 
 decode_div.querySelector("#go_out").addEventListener("click", ()=>{   
-    window.location.hash = "#/page1"
+    window.location.hash = ""
 })
 
-return decode_div
+//
+const btn_decode = decode_div.querySelector("#btn_decode");
+    btn_decode.addEventListener("click", ()=>{
+        decode_div.querySelector("#area2_decode").value=""; 
+        const textIn_decode = decode_div.querySelector("#area_decode").value;
+        console.log(textIn_decode);
+        
+        const offsetDecode = decode_div.querySelector("#jump_decode").value;
+        console.log(offsetDecode);
+        
+        const result_decode = cipher.decode(textIn_decode , offsetDecode);
+        console.log(result_decode);
+        
+        decode_div.querySelector("#area2_decode").innerHTML=result_decode;
+    })
+    return decode_div
 }
