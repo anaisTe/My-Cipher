@@ -38,7 +38,7 @@ code_div.querySelector("#go_out").addEventListener("click", ()=>{
 })
 
 
-//read text written in textarea and show the same text in code
+//read text written in textarea and show the same text in encode
 const btn_code = code_div.querySelector("#btn_code");
     btn_code.addEventListener("click", ()=>{
     code_div.querySelector("#area2_code").value=""; 
