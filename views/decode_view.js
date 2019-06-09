@@ -17,11 +17,11 @@ const decode = `
 <div id="container_code" class="center">
     <p>Cifra una palabra y ten una contraseña segura</p>
     Desplazamiento: 
-    <input id="salto" type="number" min="1" max="33" class="input-des"/>
+    <input id="jump" type="number" min="1" max="33" class="input-des"/>
     </br>
-    <textarea class="text-area" rows="4" cols="50" placeholder="Escribe aquí"></textarea>
+    <textarea id="area_decode" class="text-area" rows="4" cols="50" placeholder="Escribe aquí"></textarea>
     </br>
-    <button type="button" class="btn btn-outline-secondary" id="btn_cifrar">Descifrar</button>
+    <button type="button" class="btn btn-outline-secondary" id="btn_decode">Descifrar</button>
 </div>`
 
 decode_div.innerHTML = decode;

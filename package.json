@@ -1,0 +1,36 @@
+{
+  "name": "my-cipher",
+  "version": "1.0.0",
+  "description": "my-cipher ",
+  "main": "src/index.html",
+  "keywords": [
+    "javascript",
+    "jest"
+  ],
+  "scripts": {
+    "htmlhint": "htmlhint src/*.html test/*.html",
+    "eslint": "eslint --ext .js src/ test/",
+    "pretest": "npm run eslint && npm run htmlhint",
+    "test-browser": "opener ./test/index.html",
+    "test-node": "nyc mocha ./test/headless.js",
+    "test": "npm run test-node && npm run test-browser"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anaisTe/My-Cipher.git"
+  },
+  "author": "angie tejada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anaisTe/My-Cipher/issues"
+  },
+  "homepage": "https://github.com/anaisTe/My-Cipher#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.9.0",
+    "htmlhint": "^0.10.1",
+    "mocha": "^5.1.1",
+    "nyc": "^13.1.0",
+    "opener": "^1.4.3"
+  }
+}

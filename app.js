@@ -5,3 +5,4 @@ const view_cipher = () =>{
 }
 
 window.onload = view_cipher(); 
+
