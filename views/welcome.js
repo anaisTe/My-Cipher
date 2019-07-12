@@ -9,7 +9,7 @@ export const welcome_Page = () =>{
             luego selecciona una clave (esto indentifica la cantidad de desplazamiento para codificar) y 
             por último selecciona codificar y listo obtendrás un texto secreto.</h5>
         </div>
-        <button type="button" class="btn btn-outline-dark" id="btn_start">Comenzar</button>
+        <button type="button" class="btn btn-warning" id="btn_start">Comenzar</button>
     </div> `
 welcome_div.innerHTML=welcome;
 
