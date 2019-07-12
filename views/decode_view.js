@@ -56,7 +56,7 @@ btn_decode.addEventListener("click", ()=>{
 
 btn_reset.addEventListener("click", ()=>{
     area_decode.value="";
-    jump_decode,value="";
+    jump_decode.value="";
     area2_decode.innerHTML="";
     })
     
